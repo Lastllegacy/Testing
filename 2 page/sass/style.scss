@@ -1,0 +1,21 @@
+@import '../../1-2-3-4page/sass/_nullstyle';
+
+body {
+   font-family: 'Montserrat-Regular';
+   background: #fff;
+}
+
+.container {
+   max-width: 1440px;
+}
+
+.header {
+		&__logo {
+         position: relative;
+         top: 30px;
+         left: 30px;
+         width: 48px;
+         height: 48px;
+         background: url('../../1-2-3-4page/images/Group.svg');
+		}
+}

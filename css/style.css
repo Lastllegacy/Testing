@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* Обнуление css */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* -------------------------------------------- */
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+}
+
+body {
+  font-family: 'Montserrat-Regular';
+  background: #fff;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.header__logo {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 48px;
+  height: 48px;
+  background: url("/img/Group.svg");
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 67px 0 0 0;
+}
+
+.row-of-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row-of-colors__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.row-of-colors__item:first-child {
+  margin: 0;
+}
+
+.row-of-colors__description {
+  margin: 0 0 0 40px;
+}
+
+.row-of-colors__description > p {
+  margin: 10px 0 0 0;
+}
+
+.row-of-colors__description > p:first-child {
+  font-family: 'Montserrat-bold';
+  margin: 0;
+  padding: 0;
+}
+
+.row-of-colors__color {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+}
+
+.row-of-colors__color--ds100 {
+  background: #1f2041;
+}
+
+.row-of-colors__color--ds75 {
+  background: rgba(31, 32, 65, 0.75);
+}
+
+.row-of-colors__color--ds50 {
+  background: rgba(31, 32, 65, 0.5);
+}
+
+.row-of-colors__color--ds25 {
+  background: rgba(31, 32, 65, 0.25);
+}
+
+.row-of-colors__color--ds5 {
+  background: rgba(31, 32, 65, 0.05);
+}
+
+.row-of-colors__color--purple {
+  background: #BC9CFF;
+}
+
+.row-of-colors__color--green {
+  background: #6FCF97;
+}
+
+.row-of-fonts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row-of-fonts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 51px 0 0 0;
+}
+
+.row-of-fonts__item:first-child {
+  margin: 0;
+}
+
+.row-of-fonts__header {
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+  width: 40px;
+}
+
+.row-of-fonts__header--h1 {
+  line-height: 29px;
+  font-size: 24px;
+}
+
+.row-of-fonts__header--h2 {
+  line-height: 23px;
+  font-size: 19px;
+}
+
+.row-of-fonts__header--h3 {
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.row-of-fonts__header--body {
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.row-of-fonts__description {
+  color: #1f2041;
+  margin: 0 0 0 30px;
+  font-family: 'Montserrat-bold';
+}
+
+.row-of-fonts__description--h1 {
+  line-height: 29px;
+  font-size: 24px;
+  width: 369px;
+}
+
+.row-of-fonts__description--h2 {
+  line-height: 23px;
+  font-size: 19px;
+  width: 312px;
+}
+
+.row-of-fonts__description--h3 {
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.row-of-fonts__description--body {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: 'Montserrat-Regular';
+  color: rgba(31, 32, 65, 0.75);
+  width: 302px;
+}
