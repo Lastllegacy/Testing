@@ -1,8 +1,10 @@
 @import '../../1-2-3-4page/sass/_nullstyle';
+@import '_fonts.scss';
 
 body {
    font-family: 'Montserrat-Regular';
    background: #fff;
+   font-size: 14px;
 }
 
 .container {
@@ -11,7 +13,7 @@ body {
 
 .header {
 		&__logo {
-         position: relative;
+         position: absolute;
          top: 30px;
          left: 30px;
          width: 48px;
@@ -21,28 +23,80 @@ body {
 }
 
 .main {
-   margin: 143px 141px 0;
+   margin:140px 140px 130px 140px;
 }
 .content {
-
-}
-
-.columns {
    display: flex;
+   flex-direction: column;
 }
 
-.text-fields {
-   flex-direction: column;
+.first-three-columns {
+   display: flex;
+   height: 640px;
+}
 
-   .text-item {
-      border: 1px solid black;
-      border-radius: 5px;
+.first-column {
+   flex-direction: column;
+   width: 320px;
+   &__item {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0 0 0;
+      &:first-child {
+         margin: 0;
+      }
+
+      .input-label{
+         display: flex;
+         justify-content: space-between;
+         & span:nth-of-type(1) {
+            font-size: 12px;
+            font-family: 'Montserrat-Bold';
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #1F2041;
+         }
+         & span:nth-of-type(2) {
+            font-size: 12px;
+            font-family: 'Montserrat-Regular';
+            line-height: 15px;
+            text-transform: uppercase;
+            color: rgba(31, 32, 65, 0.5);
+         }
+
+      }
+      
+      .input-text {
+         border: 1px solid  rgba(31, 32, 65, 0.25);
+         border-radius: 4px;
+         width: 320px;
+         height: 44px;
+         padding: 0 0 0 15px;
+         margin: 5px 0 0 0;
+         color:  rgba(31, 32, 65, 0.25);
+
+         &.hover-focus {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            color: rgba(31, 32, 65, 0.75);
+            line-height: 24px;
+         }
+         &-dropdown{
+            color: rgba(31, 32, 65, 0.75);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;;
+         }
+         .dropdown-arrow {
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 44px;
+            height: 44px;
+            background: url('../icons/icon-dropdown.svg') no-repeat center;
+         }
+      }
    }
 }
-.checkbox-buttons {
 
-}
-.sliders {
-
-}
 

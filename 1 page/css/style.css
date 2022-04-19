@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'Montserrat-Regular';
-  background: #E5E5E5;
+  background: #fff;
 }
 
 .container {
@@ -256,5 +256,5 @@ body {
   font-size: 14px;
   font-family: 'Montserrat-Regular';
   color: rgba(31, 32, 65, 0.75);
-  width: 301px;
+  width: 302px;
 }
