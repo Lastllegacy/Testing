@@ -16,21 +16,21 @@
          <div class="content">
             <div class="first-three-columns">
                <div class="first-column">
-                  <div class="first-column__item">
+                  <div class="first-column__item text-field-default">
                      <div class="input-label">
                         <span>Text field</span>
                         <span>Default</span>
                      </div>
                      <input type="text" id="" class="input-text">
                   </div>
-                  <div class="first-column__item">
+                  <div class="first-column__item text-field-focus"> <!-- When User clicks on it and types smth -->
                      <div class="input-label">
                         <span>Text field</span>
                         <span>Hover / Focus</span>
                      </div>
                      <input type="text" id="" class="input-text hover-focus">
                   </div>
-                  <div class="first-column__item">
+                  <div class="first-column__item dropdown-static"> <!-- Dropdown here isnt working -->
                      <div class="input-label">
                         <span>Dropdown</span>
                      </div>
@@ -39,10 +39,17 @@
                         <div class="dropdown-arrow"></div>
                      </div>
                   </div>
+                  <div class="first-column__item masked-text-field"> <!-- 'masked' -> means for restricted use   -->
+                     <div class="input-label">
+                        <span>Masked text field</span>
+                     </div>
+                     <input type="text" id="input-mask-text" class="input-text">
+                  </div>
                </div>
             </div>   
          </div>
       </div>
    </div>
 </body>
+<script src="js/script.js"></script>
 </html>
