@@ -1,4 +1,4 @@
-@import '../../1-2-3-4page/sass/_nullstyle';
+@import '../../same-content/sass/_nullstyle.scss';
 @import '_fonts.scss';
 
 body {
@@ -18,7 +18,7 @@ body {
          left: 30px;
          width: 48px;
          height: 48px;
-         background: url('../../1-2-3-4page/images/Group.svg');
+         background: url('../../same-content/images/Group.svg');
 		}
 }
 
@@ -36,67 +36,117 @@ body {
 }
 
 .first-column {
-   flex-direction: column;
-   width: 320px;
-   &__item {
+
+   &__items {
       display: flex;
       flex-direction: column;
-      margin: 20px 0 0 0;
+      &-text{
+         display: flex;
+         flex-direction: column;
+         margin: 20px 0 0 0;
+      }
+      &-date{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 40px 0 0 0;
+      }
       &:first-child {
          margin: 0;
       }
 
-      .input-label{
-         display: flex;
-         justify-content: space-between;
-         & span:nth-of-type(1) {
-            font-size: 12px;
-            font-family: 'Montserrat-Bold';
-            line-height: 15px;
-            text-transform: uppercase;
-            color: #1F2041;
-         }
-         & span:nth-of-type(2) {
-            font-size: 12px;
-            font-family: 'Montserrat-Regular';
-            line-height: 15px;
-            text-transform: uppercase;
-            color: rgba(31, 32, 65, 0.5);
-         }
-
-      }
-      
-      .input-text {
-         border: 1px solid  rgba(31, 32, 65, 0.25);
-         border-radius: 4px;
-         width: 320px;
-         height: 44px;
-         padding: 0 0 0 15px;
-         margin: 5px 0 0 0;
-         color:  rgba(31, 32, 65, 0.25);
-
-         &.hover-focus {
-            border: 1px solid rgba(31, 32, 65, 0.5);
-            color: rgba(31, 32, 65, 0.75);
-            line-height: 24px;
-         }
-         &-dropdown{
-            color: rgba(31, 32, 65, 0.75);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;;
-         }
-         .dropdown-arrow {
-            position: relative;
-            top: 0;
-            right: 0;
-            width: 44px;
-            height: 44px;
-            background: url('../icons/icon-dropdown.svg') no-repeat center;
-         }
-      }
    }
 }
 
 
+.input-label{
+   display: flex;
+   justify-content: space-between;
+   & span:nth-of-type(1) {
+      font-size: 12px;
+      font-family: 'Montserrat-Bold';
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #1F2041;
+   }
+   & span:nth-of-type(2) {
+      font-size: 12px;
+      font-family: 'Montserrat-Regular';
+      line-height: 15px;
+      text-transform: uppercase;
+      color: rgba(31, 32, 65, 0.5);
+   }
+
+}
+
+.input-case {
+   border: 1px solid  rgba(31, 32, 65, 0.25);
+   border-radius: 4px;
+   height: 44px;
+   padding: 0 0 0 15px;
+   margin: 5px 0 0 0;
+   
+   &.text{
+      width: 320px;
+   }
+   &.date {
+      width: 150px;
+   }
+   &.gray {
+      color:  rgba(31, 32, 65, 0.25);
+   }
+
+   &.hover-focus {
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      color: rgba(31, 32, 65, 0.75);
+      line-height: 24px;
+   }
+   &-dropdown{
+      color: rgba(31, 32, 65, 0.75);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+   }
+}
+
+// .dropdown-arrow {
+//    position: absolute;
+//    top: 0;
+//    right: 0;
+//    width: 44px;
+//    height: 44px;
+//    background: url('../icons/icon-dropdown.svg') no-repeat center;
+// }
+
+.date-item {
+   display: flex;
+   flex-direction: column;
+}
+
+.input-and-arrow {
+   position: relative;
+   border: 1px solid  rgba(31, 32, 65, 0.25);
+   border-radius: 4px;
+   height: 44px;
+   width: 150px;
+   margin: 5px 0 0 0;
+   padding: 0 0 0 15px;
+
+}
+
+#date-test{
+   max-width: 130px;
+   height: 42px;
+   display: inline-block; 
+   &::after {
+      content: '-';
+      // position: relative;
+      // top: 0;
+      // right: 0;
+      width: 44px;
+      height: 44px;
+      background: url('../icons/icon-dropdown.svg') no-repeat center;
+   }  
+}
